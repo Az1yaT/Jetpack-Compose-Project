@@ -36,13 +36,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent() {
-//            val navController = rememberNavController()
-//            NavHost(navController = navController, startDestination = "screen_1") {
-//                composable("screen_1") {  }
-//                composable("screen_2") {  }
-//                composable("screen_3") {  }
-//                composable("screen_4") {  }
-//                composable("screen_5") {  }
             mainActivity()
         }
     }
@@ -77,6 +70,7 @@ public fun MainActivityView() {
     Column(
         modifier = Modifier
             .background(Color(red = 43, green = 43, blue = 43))
+//            .background()
             .fillMaxSize()
             .padding(horizontal = 30.dp),
         verticalArrangement = Arrangement.Center
@@ -193,7 +187,7 @@ public fun MainActivityView() {
 public fun MainActivityView2() {
     Column(
         modifier = Modifier
-//            .fillMaxSize()
+            .fillMaxSize()
             .background(Color(red = 43, green = 43, blue = 43))
             .padding(horizontal = 30.dp, vertical = 40.dp)
     ) {
